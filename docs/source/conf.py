@@ -20,8 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 project = u'Sereni App'
-copyright = u'2019, William Mandai'
-author = u'William Mandai'
+copyright = u'2022, Sarah W'
+author = u'Sarah W'
 
 # The short X.Y version
 version = u'latest'
