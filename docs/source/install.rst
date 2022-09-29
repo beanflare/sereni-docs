@@ -7,7 +7,7 @@ Thanks for purchasing `Sereni <https://beanflare.com>`__.
 
 .. Note:: Requires PHP >= 8.0 and MySQL.
 
-.. ATTENTION:: You can check your server requirements by downloading `this file <https://dbz0e1mkzg4d4.cloudfront.net/tools/requirements.zip>`__ extract it and upload to your server and access it via a URL i.e http://yourdomain.com/requirements.php (Delete after use).
+.. ATTENTION:: You can check your server requirements by downloading `this file <https://d3psyma08i51ex.cloudfront.net/sereni/requirements.zip>`__ extract it and upload to your server and access it via a URL i.e http://yourdomain.com/requirements.php (Delete after use).
 
 Required PHP Extensions
 ^^^^^^^^^^^^^^^^^^^^^^^
