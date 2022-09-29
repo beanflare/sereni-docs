@@ -24,15 +24,8 @@ If you give any of your folders 777 permissions, you are allowing any user to re
 To fix permissions issue run command ``sudo chown -R my-user:www-data /path/to/your/sereni``
 The first **my-user** is name of the user, and the second **www-data** is the name of the group.
 
-Then give both yourself and the webserver permissions as shown;
-
-``sudo find /path/to/your/sereni -type f -exec chmod 664 {} \;``
-``sudo find /path/to/your/sereni -type d -exec chmod 775 {} \;``
-
 Then give the webserver the rights to read and write to storage and cache.
 
 ``sudo chgrp -R www-data storage bootstrap/cache``  
 
 ``sudo chmod -R ug+rwx storage bootstrap/cache``  
-
-Credits https://stackoverflow.com/questions/30639174/how-to-set-up-file-permissions-for-laravel-5-and-others

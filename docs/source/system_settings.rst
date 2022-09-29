@@ -8,10 +8,10 @@ You can modify the settings below;
  - **Locale**: Your preferred system locale
  - **Timezone**: Your timezone
  - **Date Format**: Choose your preferred date format
- - **Privacy Policy URL**: A link to your privacy policy
+ - **Privacy Policy URL**: A link to your privacy policy (Shown when registering)
  - **Default Role**: When a user is created or registered, this role will be assigned.
 
- .. ATTENTION:: Do NOT set the **Default Role** to admin.
+ .. ATTENTION:: Do NOT set the **Default Role** to Admin.
 
 Other Options
  - **Enable ReCaptcha**: Use ReCaptcha in registrations

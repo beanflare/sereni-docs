@@ -22,7 +22,7 @@ You can change the queue driver in your .env file ``QUEUE_DRIVER=database``
 Supervisord Configuration
 -----------------------------
 We highly recommend configuring supervisord to monitor your processes and restart your queue if it fails.  
-Read more on `Supervisord Configuration <https://laravel.com/docs/9.0/queues#supervisor-configuration>`__
+Read more on `Supervisord Configuration <https://laravel.com/docs/9.x/queues#supervisor-configuration>`__
 
 
 Application Configuration
@@ -65,9 +65,9 @@ To setup paypal;
  - Copy Client ID and paste it in your .env file PAYPAL_CLIENT_ID=your-key
  - Copy Secret key and paste in your .env file PAYPAL_CLIENT_SECRET=your-secret
  - At the bottom of the page click Add Webhook
- - Set the webhook URL to https://{YOUR-DOMAIN}/api/v1/paypal/webhook replace {YOUR-DOMAIN} with your actual domain e.g https://portal.domain.com/paypal/webhook
+ - Set the webhook URL to https://{YOUR-DOMAIN}/api/v1/paypal/webhook replace {YOUR-DOMAIN} with your actual domain e.g https://portal.domain.com/api/v1/paypal/webhook
  - Enable events **Payment Authorization created, Payment authorization voided, Payment capture completed, Payment capture denied, Payment Capture pending, Payment capture refunded, Payment capture reversed, Payment order cancelled, Payment order created**
- - After the webhook is created, copy the Webhook ID and paste to your .env file PAYPAL_WEBHOOK_ID=your-webhook-id}
+ - After the webhook is created, copy the Webhook ID and paste to your .env file PAYPAL_WEBHOOK_ID={your-webhook-id}
  
  .. ATTENTION:: To enable PayPal Live, open .env file and change PAYPAL_MODE=sandbox to PAYPAL_MODE=live
 
@@ -77,7 +77,6 @@ To configure `Stripe <https://dashboard.stripe.com>`__, proceed as follows;
 
  - Login to your stripe dashboard account
  - Get your API Keys by clicking Developers section
- - Obtain your stripe webhook keys by clicking on Webhooks under Developers section of your stripe dashboard.
 
 Open your .env file in Sereni and modify the values below;
 
@@ -103,7 +102,7 @@ To configure `RazorPay <https://dashboard.razorpay.com>`__, proceed as follows;
  - Login to your razorpay dashboard account
  - Get your API Keys by clicking Settings -> API Keys section
 
-Open your .env file in Sereni App and modify the values below;
+Open your .env file and modify the values below;
 
 .. code-block:: shell
 
@@ -119,7 +118,7 @@ To configure mollie, proceed as follows;
  - Login to your `Mollie <https://www.mollie.com/dashboard>`__ dashboard account
  - Get your API Keys by clicking on Developers section
 
-Open your .env file in Sereni App and modify the values below;
+Open your .env file and modify the values below;
 
 .. code-block:: shell
 

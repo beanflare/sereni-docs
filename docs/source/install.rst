@@ -44,7 +44,7 @@ You’ll need to create a new database along with a user to access it. Most host
 
 - You will need to enter this credentials in the steps below.
 
-There are 2 steps to install Sereni App
+There are 2 steps to install Sereni
  - Using the built in web installer
  - Laravel artisan install method (Requires terminal)
    
@@ -62,7 +62,7 @@ The steps below shows how you can install sereni to be accessible via a sub doma
  - Create a folder inside **public_html or www** e.g **sereni** and upload your downloaded files into the folder **/public_html/sereni** (Make sure it includes hidden files e.g .env)
  - Go to **sub domains** on your cpanel dashboard and create a sub domain
  - Enter your preferred sub domain e.g portal.yourdomain.com
- - Enter **/public_html/sereni** as your **Document Root**
+ - Enter **/public_html/sereni/public** as your **Document Root**
  - Save it and access **http://portal.yourdomain.com/installer** 
  
  .. ATTENTION:: The url **/installer** does not point to a folder so do not attempt to create a folder named installer
@@ -101,7 +101,7 @@ Here is a sample of how you can set the permissions in ubuntu server.
 - Enter your database access information that you used when creating database.
 - Enter your admin account information. (This is the admin account you are going to login with)
 - Click on install and Sereni will perform the migrations and seeding.
-- If everything went well, you should get a success screen. Click on **Exit** and login using admin account you created above.
+- If everything went well, you should be redirected to login page and you can login using admin account you created above.
   
 
 .. ATTENTION:: You will need to setup email inorder to verify users accounts. More on that in next article (Configure)
@@ -110,9 +110,9 @@ Here is a sample of how you can set the permissions in ubuntu server.
 Installing through SSH (Artisan command)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 If you need to install the app using ``php artisan`` command proceed as follows;
- - Open **.env** file and update your database credentials i.e **DB host,DB User etc** (You can change other configurations later).
+ - Open **.env** file and update your database credentials i.e **DB_HOST=xxxxx, DB_PORT=3306, DB_DATABASE=xxxx, DB_USERNAME=xxxx, DB_PASSWORD=xxxx** (You can change other configurations later).
  - Run command ``php artisan sereni:install`` to start the installation.
- - You will be asked to enter admin email and password.
+ - The app will run migrations and you will be asked to enter admin name, email and password.
  - After successfull install you can now access your dashboard using http://portal.yourdomain.com
  - Use your admin account to login.
   
@@ -123,7 +123,7 @@ Email Configuration
 
  - Sereni supports SMTP, Mailgun, Postmark, Amazon SES, and sendmail.
  - If you have no idea how to configure email sending, read on the next guide **Configuration**.
- - For more information check https://discuss.sereni.com/
+ - For more information check https://discuss.beanflare.com
 
 CRON Configuration
 ^^^^^^^^^^^^^^^^^^^^
@@ -133,7 +133,7 @@ Add a CRON job as shown below;
 
 This Cron will call the command scheduler every minute. When the **schedule:run** command is executed, Sereni will evaluate your scheduled tasks and runs the tasks that are due.
 
-More information available here https://discuss.sereni.com
+More information available here https://discuss.beanflare.com
 
 Queue Configuration (optional)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -165,7 +165,7 @@ Supervisor configuration files are typically stored in the **/etc/supervisor/con
 	redirect_stderr=true
 	stdout_logfile=/path/to/sereni/worker.log
 
-You can refer to `laravel docs <https://laravel.com/docs/9.0/queues#supervisor-configuration>`__ 
+You can refer to `laravel docs <https://laravel.com/docs/9.x/queues#supervisor-configuration>`__ 
 
 Starting Supervisor
 """"""""""""""""""""""
