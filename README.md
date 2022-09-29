@@ -23,11 +23,13 @@ Sereni is a web based, easy, powerful yet affordable invoicing app with project 
 ## Installation
 For instructions [Read the Documentation](https://sereni-docs.beanflare.com)
 
-## Invoices Screenshot
-![Sereni](https://dbz0e1mkzg4d4.cloudfront.net/images/invoices-list.png)
-
 ## Social Login support
-![Sereni](https://dbz0e1mkzg4d4.cloudfront.net/images/social-logins.jpg)
+Currently supports;
+- Facebook
+- Twitter
+- Github
+- LinkedIn
+- Gitlab
 
 ## RESTful API included
 [Read more on Sereni API](https://sereni-docs.beanflare.com)
