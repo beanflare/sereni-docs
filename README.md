@@ -8,7 +8,7 @@ Sereni is a web based, easy, powerful yet affordable invoicing app with project 
 
 ----------
 
-![Sereni](https://d3psyma08i51ex.cloudfront.net/sereni/preview-large.jpg)
+![Sereni](https://d3psyma08i51ex.cloudfront.net/sereni/preview_large.jpg)
 
 
 ## Why Sereni?
