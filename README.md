@@ -4,11 +4,11 @@
 
 Sereni is a web based, easy, powerful yet affordable invoicing app with project management, expense tracking and time tracking for small businesses/freelancers.
 
-[Purchase Sereni](https://codecanyon.net/item/sereni-freelancer-manager/23698199) | [Documentation](https://sereni-docs.beanflare.com) | [Support Support](https://support.beanflare.com)
+[Purchase Sereni](https://codecanyon.net/item/sereni-freelancer-manager/23698199) | [Documentation](https://sereni-docs.beanflare.com) | [Support](https://support.beanflare.com)
 
 ----------
 
-![Sereni](https://d3psyma08i51ex.cloudfront.net/sereni/preview_large.jpg)
+![Sereni](https://d3psyma08i51ex.cloudfront.net/sereni/preview_large.png)
 
 
 ## Why Sereni?
